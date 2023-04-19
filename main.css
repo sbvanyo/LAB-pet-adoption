@@ -1,5 +1,37 @@
 body {
-  background-color: lavender;
+  background-color: #f5cba4;
+}
+
+.card {
+  margin: 13px;
+}
+
+.card-title {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 15px;
+  background-color: #dedede;
+  color: #828282;
+}
+
+.card-img-top {
+  margin: 10px;
+  width: 15rem;
+  align-self: center;
+  border: 1px lightgray solid;
+  padding: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+#pet-type {
+  background: #db8e72;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
 }
 
 #btn-group {
@@ -15,13 +47,13 @@ body {
 }
 
 #cat-btn {
-  background-color: lightseagreen;
+  background-color: #4dacc9;
   color: white;
   padding: 5px 20px 5px 20px;
 }
 
 #dog-btn {
-  background-color: lightgreen;
+  background-color: #52bf7e;
   color: white;
   padding: 5px 20px 5px 20px;
 }
