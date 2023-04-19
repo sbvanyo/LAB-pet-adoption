@@ -1,8 +1,45 @@
 body {
-  background-color: burlywood;
+  background-color: lavender;
+}
+
+#btn-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.btn-primary {
+  margin: 10px;
+  border: white 1px solid;
+}
+
+#cat-btn {
+  background-color: lightseagreen;
+  color: white;
+  padding: 5px 20px 5px 20px;
+}
+
+#dog-btn {
+  background-color: lightgreen;
+  color: white;
+  padding: 5px 20px 5px 20px;
+}
+
+#dino-btn {
+  background-color: orange;
+  color: white;
+  padding: 5px 20px 5px 20px;
+}
+
+#all-btn {
+  background-color: gold;
+  color: white;
+  padding: 5px 20px 5px 20px;
 }
 
 #app {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
