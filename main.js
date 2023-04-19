@@ -257,13 +257,13 @@ const cardsOnDom = (array) => {
   let domString = "";
   for (const pet of pets) {
     domString += `<div class="card" style="width: 18rem;">
+    <h5 class="card-title">${pet.name}</h5>
     <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
     <div class="card-body">
-      <h5 class="card-title">${pet.name}</h5>
-      <p>Type: ${pet.type}</p>
-      <p class="card-text">Special Skill: ${pet.specialSkill}</p>
       <p>Color: ${pet.color}</p>
+      <p class="card-text">Special Skill: ${pet.specialSkill}</p>
     </div>
+    <p id="pet-type">${pet.type}</p>
   </div>`;
   }
 
@@ -273,7 +273,6 @@ const cardsOnDom = (array) => {
   renderToDom("#app", domString);
 
 }
-
 
 cardsOnDom(pets);
 console.log(pets);
