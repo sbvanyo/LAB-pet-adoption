@@ -274,5 +274,27 @@ const cardsOnDom = (array) => {
 
 }
 
+
+
+// function to filter pets by type
+const filter = (array, typeString) => {
+  const petArray = [];
+
+  // array.forEach((item) => {
+  //   if (pet.type === typeString) {
+  //     petArray.push(pet);
+  //   }
+  // });
+
+  for (const member of array) {
+    if (pet.type === typeString) {
+      petArray.push(pet);
+    }
+  }
+
+  return petArray;
+}
+
+
 cardsOnDom(pets);
 console.log(pets);
