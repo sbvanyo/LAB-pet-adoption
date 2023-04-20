@@ -249,13 +249,12 @@ const renderToDom = (divId, htmlToRender) => {
   selectedDiv.innerHTML = htmlToRender;
 };
 
-// const targetingApp = document.querySelector("#app");
 
 // get the cards on the DOM
 const cardsOnDom = (array) => {
-
+  
   let domString = "";
-  for (const pet of pets) {
+  for (const pet of array) {
     domString += `<div class="card" style="width: 18rem;">
     <h5 class="card-title">${pet.name}</h5>
     <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
@@ -267,12 +266,60 @@ const cardsOnDom = (array) => {
   </div>`;
   }
 
-  // targetingApp.innerHTML = domString;
-  // console.log("domString" + domString);
-
   renderToDom("#app", domString);
 
-}
+};
 
 cardsOnDom(pets);
-console.log(pets);
+
+
+// function to filter pets by type
+const filter = (array, typeString) => {
+  const petArray = [];
+
+  // array.forEach((pet) => {
+  //   if (pet.type === typeString) {
+  //     petArray.push(pet);
+  //   }
+  // });
+
+  for (const pet of pets) {
+    if (pet.type === typeString) {
+      petArray.push(pet);
+    }
+  }
+
+  return petArray;
+}
+
+//EVENTS
+
+// 1. Target buttons on the DOM
+const showCats = document.querySelector("#cat-btn");
+const showDogs = document.querySelector("#dog-btn");
+const showDinos = document.querySelector("#dino-btn");
+const showAll = document.querySelector("#all-btn");
+
+// 2. Add click event to show all the instuctors on button click using the function we created above
+showAll.addEventListener('click', () => {
+  cardsOnDom(pets);
+});
+
+// 3. Add click event to filter by animal type on button click
+showCats.addEventListener('click', () => {
+  const cats = filter(pets, "cat");
+  console.log(cats);
+  cardsOnDom(cats);
+});
+
+showDogs.addEventListener('click', () => {
+  const dogs = filter(pets, "dog");
+  console.log(dogs);
+  cardsOnDom(dogs);
+});
+
+showDinos.addEventListener('click', () => {
+  const dinos = filter(pets, "dino");
+  console.log(dinos);
+  cardsOnDom(dinos);
+});
