@@ -26,6 +26,14 @@ body {
   text-align: center;
 }
 
+.btn-danger {
+  background-color: tomato;
+}
+
+#form {
+  margin: 20px;
+}
+
 #pet-type {
   background: #db8e72;
   display: flex;
