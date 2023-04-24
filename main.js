@@ -149,7 +149,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://media.istockphoto.com/photos/crazy-looking-black-and-white-border-collie-dog-say-looking-intently-picture-id1213516345?b=1&k=20&m=1213516345&s=612x612&w=0&h=Nw0QSlgjmF5VUDCm67rlvW0mtLfbu0gqMruolP-PS-A="
     },
     {
       id: 20,
