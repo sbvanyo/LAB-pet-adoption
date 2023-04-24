@@ -74,9 +74,33 @@ body {
   margin: 10px;
 }
 
+.btn-primary {
+  margin: 10px;
+  border: white 1px solid;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
 .form-box {
-  width: 75%;
-  margin: 5px;
+  width: 400px;
+}
+
+.modal-title {
+  text-align: center;
+  margin: 50px 30px 30px 30px;
+  font-family: 'Abril Fatface', cursive;
+  color: #515151;
+  font-size: 25px;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
 }
 
 #main-heading {
@@ -87,28 +111,18 @@ body {
   color: #515151;
 }
 
-#form-title {
-  text-align: center;
-  margin: 50px 30px 30px 30px;
-  font-family: 'Abril Fatface', cursive;
-  color: #515151;
-}
-
 #form {
-  margin: 20px 300px 50px 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(212, 204, 204);
   font-family: 'Raleway', sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-radius: 13px;
 }
 
 #submit-btn {
   margin: 10px;
-  margin-top: 15px;
+  margin-top: 25px;
   padding: 5px 10px 5px 10px;
   background-color: #515151;
   color: white;
@@ -121,7 +135,7 @@ body {
   color: #828282;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 10px;
   border-radius: 13px;
 }
@@ -129,20 +143,26 @@ body {
 #btn-group {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
   padding: 20px;
 }
 
-.btn-primary {
-  margin: 10px;
-  border: white 1px solid;
-  font-family: 'Raleway', sans-serif;
+#new-pet-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+
 
 #cat-btn {
   background-color: #4dacc9;
   color: white;
   padding: 5px 20px 5px 20px;
+}
+
+#cat-btn:hover {
+  background-color: #3c849a;
 }
 
 #dog-btn {
@@ -151,16 +171,37 @@ body {
   padding: 5px 20px 5px 20px;
 }
 
+#dog-btn:hover {
+  background-color: #409a64;
+}
+
 #dino-btn {
   background-color: orange;
   color: white;
   padding: 5px 20px 5px 20px;
 }
 
+#dino-btn:hover {
+  background-color: rgb(209, 136, 1);
+}
+
 #all-btn {
   background-color: gold;
   color: white;
   padding: 5px 20px 5px 20px;
+}
+
+#all-btn:hover {
+  background-color: rgb(209, 177, 0);
+}
+
+#new-pet-btn {
+  margin-top: 0;
+  background-color: rgb(211, 167, 243);
+}
+
+#new-pet-btn:hover {
+  background-color: rgb(172, 138, 196);
 }
 
 #app {
