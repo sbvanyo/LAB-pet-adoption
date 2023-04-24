@@ -255,16 +255,59 @@ const cardsOnDom = (array) => {
   
   let domString = "";
   for (const pet of array) {
-    domString += `<div class="card" style="width: 18rem;">
-    <h5 class="card-title">${pet.name}</h5>
-    <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-    <div class="card-body">
-      <p>Color: ${pet.color}</p>
-      <p class="card-text">Special Skill: ${pet.specialSkill}</p>
-      <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
-    </div>
-    <p id="pet-type">${pet.type}</p>
-  </div>`;
+
+    if (pet.type === "cat") {
+      domString += `<div class="cat-card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <p>Color: ${pet.color}</p>
+        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+      </div>
+      <p id="pet-type">i'm a ${pet.type}!</p>
+    </div>`;
+    } 
+    
+    else if (pet.type === "dog") {
+      domString += `<div class="dog-card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <p>Color: ${pet.color}</p>
+        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+      </div>
+      <p id="pet-type">i'm a ${pet.type}!</p>
+    </div>`;
+    } 
+    
+    else if (pet.type === "dino") {
+      domString += `<div class="dino-card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <p>Color: ${pet.color}</p>
+        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+      </div>
+      <p id="pet-type">i'm a ${pet.type}!</p>
+    </div>`;
+    } 
+    
+    else {
+      domString += `<div class="card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <p>Color: ${pet.color}</p>
+        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+      </div>
+      <p id="pet-type">i'm a ${pet.type}!</p>
+    </div>`;
+    }
+
   }
 
   renderToDom("#app", domString);
@@ -272,6 +315,7 @@ const cardsOnDom = (array) => {
 };
 
 cardsOnDom(pets);
+
 
 
 // function to filter pets by type

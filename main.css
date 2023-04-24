@@ -1,11 +1,49 @@
 body {
-  background-color: #f5cba4;
+  background-color: whitesmoke;
 }
 
 .card {
-  margin: 13px;
+  margin: 15px;
+  padding: 11px;
   font-family: 'Raleway', sans-serif;
-  background-color: whitesmoke;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13px;
+}
+
+.cat-card {
+  margin: 13px;
+  padding: 11px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #9ccbd9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13px;
+}
+
+.dog-card {
+  margin: 13px;
+  padding: 11px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #a9d4b2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13px;
+}
+
+.dino-card {
+  margin: 13px;
+  padding: 11px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(254, 208, 122);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13px;
 }
 
 .card-title {
@@ -14,13 +52,16 @@ body {
   padding: 15px;
   background-color: #dedede;
   color: #828282;
+  border: white 1px solid;
+  border-radius: 13px;
+  font-weight: bold;
 }
 
 .card-img-top {
   margin: 10px;
   width: 15rem;
   align-self: center;
-  border: 1px lightgray solid;
+  border: 1px white solid;
   padding: 10px;
 }
 
@@ -30,6 +71,7 @@ body {
 
 .btn-danger {
   background-color: tomato;
+  margin: 10px;
 }
 
 .form-box {
@@ -42,12 +84,14 @@ body {
   text-align: center;
   margin-top: 40px;
   font-size: 120px;
+  color: #515151;
 }
 
 #form-title {
   text-align: center;
-  margin: 30px;
+  margin: 50px 30px 30px 30px;
   font-family: 'Abril Fatface', cursive;
+  color: #515151;
 }
 
 #form {
@@ -55,26 +99,31 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: rgb(212, 204, 204);
   font-family: 'Raleway', sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-radius: 13px;
 }
 
 #submit-btn {
   margin: 10px;
   margin-top: 15px;
   padding: 5px 10px 5px 10px;
-  background-color: #dedede;
+  background-color: #515151;
+  color: white;
   width: 150px;
+  border-radius: 13px;
 }
 
 #pet-type {
-  background: #db8e72;
+  background-color: whitesmoke;
+  color: #828282;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 10px;
+  border-radius: 13px;
 }
 
 #btn-group {
