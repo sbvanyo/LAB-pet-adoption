@@ -269,19 +269,6 @@ const cardsOnDom = (array) => {
     </div>`;
     } 
     
-    else if (pet.type === "dog") {
-      domString += `<div class="dog-card" style="width: 18rem;">
-      <h5 class="card-title">${pet.name}</h5>
-      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-      <div class="card-body">
-        <p>Color: ${pet.color}</p>
-        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
-        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
-      </div>
-      <p id="pet-type">i'm a ${pet.type}!</p>
-    </div>`;
-    } 
-    
     else if (pet.type === "dino") {
       domString += `<div class="dino-card" style="width: 18rem;">
       <h5 class="card-title">${pet.name}</h5>
@@ -295,6 +282,19 @@ const cardsOnDom = (array) => {
     </div>`;
     } 
     
+    else if (pet.type === "dog") {
+      domString += `<div class="dog-card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <p>Color: ${pet.color}</p>
+        <p class="card-text">Special Skill: ${pet.specialSkill}</p>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+      </div>
+      <p id="pet-type">i'm a ${pet.type}!</p>
+    </div>`;
+    }
+
     else {
       domString += `<div class="card" style="width: 18rem;">
       <h5 class="card-title">${pet.name}</h5>
@@ -307,7 +307,6 @@ const cardsOnDom = (array) => {
       <p id="pet-type">i'm a ${pet.type}!</p>
     </div>`;
     }
-
   }
 
   renderToDom("#app", domString);
@@ -387,7 +386,7 @@ const createPet = (e) => {
     name: document.querySelector("#nameInput").value,
     color: document.querySelector("#colorInput").value,
     specialSkill: document.querySelector("#specialSkillInput").value,
-    type: document.querySelector("#typeInput").value,
+    type: document.querySelector('input[name="checked"]:checked').id,
     imageUrl: document.querySelector("#imageInput").value
   }
 

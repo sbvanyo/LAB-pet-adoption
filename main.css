@@ -103,6 +103,11 @@ body {
   align-items: center;
 }
 
+.form-check {
+  display: flex;
+  align-self: flex-start;
+}
+
 #main-heading {
   font-family: 'Abril Fatface', serif;
   text-align: center;
@@ -118,6 +123,11 @@ body {
   font-family: 'Raleway', sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+#typeInput {
+  display: flex;
+  align-self: flex-start;
 }
 
 #submit-btn {
