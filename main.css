@@ -87,7 +87,7 @@ body {
 }
 
 .form-box {
-  width: 400px;
+  width: 100%;
 }
 
 .modal-title {
@@ -96,6 +96,10 @@ body {
   font-family: 'Abril Fatface', cursive;
   color: #515151;
   font-size: 25px;
+}
+
+.modal-body {
+  width: 85%;
 }
 
 .modal-content {
